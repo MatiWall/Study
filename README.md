@@ -9,3 +9,5 @@
  * path dependency
  * american options
  * asian options
+
+learning techniques
