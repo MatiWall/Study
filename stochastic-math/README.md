@@ -34,6 +34,7 @@ Once you have a strong grasp of the basics, you can explore more advanced topics
 - **Stochastic Volatility Models**: Heston model and other volatility models.
 - **Credit Risk Models**: Modeling and pricing credit derivatives.
 - **Optimal Control and Portfolio Theory**: Merton's portfolio problem, dynamic programming.
+- **GARCH models (AR Models)**
 
 ## Understanding the Stock and Bond Market (Should be in another part)
 - **Stock Market Basics**: 
