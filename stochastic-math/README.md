@@ -28,6 +28,9 @@ Dive into the specific methods used to price different types of financial deriva
 - **Numerical Methods**: Monte Carlo simulations, finite difference methods, and binomial/trinomial trees.
 - **Greeks**: 
 - **local vilatility and local correlation**
+  - Stochastic volatility
+  - Heston models
+    
 ## Advanced Topics
 Once you have a strong grasp of the basics, you can explore more advanced topics:
 - **Jump Diffusion Models**: Incorporating jumps into price models (e.g., Merton's model).
