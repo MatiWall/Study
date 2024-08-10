@@ -5,6 +5,7 @@ Start with the core concepts of stochastic processes and their applications in f
 - **Brownian Motion (Wiener Process)**: Definition, properties, and paths.
 - **Stochastic Processes**: Definition, types (e.g., Markov processes, martingales), and basic properties.
 - **Itô Calculus**: 
+  - Itô Isometry
   - Itô's Lemma
   - Stochastic integrals
   - Itô processes
