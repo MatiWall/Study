@@ -6,9 +6,10 @@ Start with the core concepts of stochastic processes and their applications in f
 - **Stochastic Processes**: Definition, types (e.g., Markov processes, martingales), and basic properties.
 - **Itô Calculus**: 
   - Itô Isometry
+  - Itô processes
   - Itô's Lemma
   - Stochastic integrals
-  - Itô processes
+
 
 ## Stochastic Differential Equations (SDEs)
 Learn how to model financial systems using SDEs:
