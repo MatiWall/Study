@@ -16,6 +16,7 @@ Learn how to model financial systems using SDEs:
 - **Formulation of SDEs**: Understanding the components (drift and diffusion terms).
 - **Solving SDEs**: Methods to find solutions (analytical and numerical techniques).
 - **Applications in Finance**: Modeling stock prices (Geometric Brownian Motion), interest rates, and other financial quantities.
+- **Fourier Transformations**:
 
 ## Risk-Neutral Valuation
 Understand the fundamental concepts of risk-neutral valuation, which is crucial for derivative pricing:
