@@ -19,4 +19,4 @@ try "the journaling habit", write both good and bad. meditate. spend tile alone 
 6. The 2 message protocol (2MP) - Get 2 deep tissue massages a week
 7. Traffic University - use time in traffic, grocery shopping and erfand running to learn
 8. The dream team technique - delegate tasks that are poor use of yout time and diminish your happiness
-
+9. The weekly design system (WDS) - the things that are scheduled are the things tavt get done. sunday morning create a blueprint for a beautiful week. Start by writing the highlights from the last 7 days, recird lessions learnd and optimizations for making the next week better. Next schedule yout entire week, victory hour, 90/90/1 sessions, 60/10 cycles and 2ww, as well as passions and loved ones.
