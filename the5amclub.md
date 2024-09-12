@@ -9,3 +9,9 @@ try "the journaling habit", write both good and bad. meditate. spend tile alone 
 1. 19-20 - last meal, devices turnd of, osolation from over stimulation 
 2. 20-21 - conversations with loved ones, optional meditation, reading, recreational pursuits
 3. prepare for sleep in cool, dark and technology free bedrooms, grattitude practice, preparation for pocket one of morning routine.
+
+# 10 tatics of lifelong genius model
+1. The tight bubble of total focus (tbtf) - remove all noice for long strethes of time.
+2. The 90/90/1 rule - each working day, spend 90 minutes undesturped ona a task that will make me own my field.
+3. The 60/10 method - work in cycles pf 60min work and 10 rest. most good work is done while rested.
+4. The daily 5 concept - during second pocketbof victory hour write down 5 small targets you want to achive. Consistently solving small tasks will lead to significant results.
