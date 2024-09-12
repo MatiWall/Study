@@ -15,3 +15,8 @@ try "the journaling habit", write both good and bad. meditate. spend tile alone 
 2. The 90/90/1 rule - each working day, spend 90 minutes undesturped ona a task that will make me own my field.
 3. The 60/10 method - work in cycles pf 60min work and 10 rest. most good work is done while rested.
 4. The daily 5 concept - during second pocketbof victory hour write down 5 small targets you want to achive. Consistently solving small tasks will lead to significant results.
+5. The 2nd wind workout (2ww) - Schedule a second workout after work.
+6. The 2 message protocol (2MP) - Get 2 deep tissue massages a week
+7. Traffic University - use time in traffic, grocery shopping and erfand running to learn
+8. The dream team technique - delegate tasks that are poor use of yout time and diminish your happiness
+
