@@ -26,6 +26,13 @@ try "the journaling habit", write both good and bad. meditate. spend tile alone 
 1. becoming legendary is all about sustainability, not just for a mont or a year.
 2. Longevity is a key to legendary
 3. must balance intence work with deep rest and recovery
+4. top performance truly isent linear (cycle).
+5. the time you least feel like doing something is the bestctime to do it.
+6. all work an no play depletes your greatness
+7 time away from work is not a waste, its a must
+8. heaven on earth is a state everyone can create (state of mind)
+9 winning without enjoying is nothing
+
 
 ## The 5 assets of genius
 1. mental focus
@@ -33,4 +40,8 @@ try "the journaling habit", write both good and bad. meditate. spend tile alone 
 3. personal will power
 4. original talent
 5. daily time
+
+
+
+
 
