@@ -21,3 +21,16 @@ try "the journaling habit", write both good and bad. meditate. spend tile alone 
 8. The dream team technique - delegate tasks that are poor use of yout time and diminish your happiness
 9. The weekly design system (WDS) - the things that are scheduled are the things tavt get done. sunday morning create a blueprint for a beautiful week. Start by writing the highlights from the last 7 days, recird lessions learnd and optimizations for making the next week better. Next schedule yout entire week, victory hour, 90/90/1 sessions, 60/10 cycles and 2ww, as well as passions and loved ones
 10. The 60 minute student - the more you know the better you will do. Study atleast 60 minutes a day.
+
+# The twin cycles of elite performers
+1. becoming legendary is all about sustainability, not just for a mont or a year.
+2. Longevity is a key to legendary
+3. must balance intence work with deep rest and recovery
+
+## The 5 assets of genius
+1. mental focus
+2. physical energy
+3. personal will power
+4. original talent
+5. daily time
+
