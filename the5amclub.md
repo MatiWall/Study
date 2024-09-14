@@ -33,6 +33,7 @@ try "the journaling habit", write both good and bad. meditate. spend tile alone 
 8. heaven on earth is a state everyone can create (state of mind)
 9 winning without enjoying is nothing
 10. adults are deteriorated children.
+11. follow your joy (joy gps)
 
 ## The 5 assets of genius
 1. mental focus
@@ -40,6 +41,9 @@ try "the journaling habit", write both good and bad. meditate. spend tile alone 
 3. personal will power
 4. original talent
 5. daily time
+
+## Thr billionares maxims
+1. Your relationship with you predicts your relationship with the world. All humanitys problems stem from mans inability to sit quitely in a room.
 
 
 
