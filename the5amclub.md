@@ -32,7 +32,7 @@ try "the journaling habit", write both good and bad. meditate. spend tile alone 
 7 time away from work is not a waste, its a must
 8. heaven on earth is a state everyone can create (state of mind)
 9 winning without enjoying is nothing
-
+10. adults are deteriorated children.
 
 ## The 5 assets of genius
 1. mental focus
