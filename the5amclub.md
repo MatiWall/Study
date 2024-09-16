@@ -44,6 +44,15 @@ try "the journaling habit", write both good and bad. meditate. spend tile alone 
 
 ## Thr billionares maxims
 1. Your relationship with you predicts your relationship with the world. All humanitys problems stem from mans inability to sit quitely in a room.
+2. Collect miraculous experiences over material things. 
+3. Failure inflates fearlesness. never be controlled by "what would people think", "what if i get rejected" and "I'll look silly if i try".
+4. exercise your mind to think only thoughts that serve your ascent to mastery and happiness.
+5. Avoide bad people. We model the behavior of the poeope we spend our days with. Relate peacefully as mush as possible woth everyone.0
+6. Money is the fruit of generocity, not scarcity. Give more to receive more. 
+7. Optimal health maximizes your power to produce magic. 
+8. Continue raising your lifes standards toward masterclass. treat yout self amazingly, lifes to short for otherwose. 
+9. Deep love yields unconquerable joy. Any change yoy get, show people love. Be more interested in other people than trying to be interested yout self.
+10. 
 
 
 
