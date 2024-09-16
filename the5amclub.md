@@ -52,7 +52,9 @@ try "the journaling habit", write both good and bad. meditate. spend tile alone 
 7. Optimal health maximizes your power to produce magic. 
 8. Continue raising your lifes standards toward masterclass. treat yout self amazingly, lifes to short for otherwose. 
 9. Deep love yields unconquerable joy. Any change yoy get, show people love. Be more interested in other people than trying to be interested yout self.
-10. 
+10. Heaven on earth is a state, not a plase. 
+11. Tomorrow is a bonus, not a right. Don't put off your happiness.
+
 
 
 
