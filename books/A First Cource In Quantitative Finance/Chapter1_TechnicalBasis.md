@@ -9,3 +9,5 @@ $$ \bigcap_{n=1}^\infty (a-\frac{1}{n}, b+\frac{1}{n})=[a, b] $$
 > ??
 
 > **Open and Closed Sets** A set is oppen if for every point in the set there is a small negboring region that is also in the set. For example $(a,b)$ is an open aset as it includes all points between $a$ and $b$ and the endpoints are not included. Also $x\gt5$ is an open set whereas $x\ge 5$ is a closed set.
+
+
