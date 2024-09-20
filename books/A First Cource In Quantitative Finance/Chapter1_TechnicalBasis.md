@@ -4,7 +4,7 @@
 A family $\mathcal{F}$ of sets (events) $A_1, A_2,...$ is called a $\sigma$-algbra if it satisfy the following conditions
 1. $\mathcal{F}$ is non empty
 2. if $A \in \mathcal{F}$ then $A^c \in \mathcal{F}$
-3. if $A_1, A_2, ... \in \mathcal{F}$ then $\bigcap_{n=0}^\infty A_n \in \mathcal{F}$
+3. if $A_1, A_2, ... \in \mathcal{F}$ then $\bigcup_{n=0}^\infty A_n \in \mathcal{F}$
 
 >**$\sigma$-algebra** is used to ensure consistency when defining measures on a collection of events or sets.
 
