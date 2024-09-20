@@ -43,4 +43,5 @@ $\mathcal{F}_1 = \{\emptyset,\{(H, H), (H, T)\}, \{(T, T), (T, H)\}, \Omega\}$
 6. $A_2^c = \{(H, H), (T, T), (T, H)\}$
 * $A_1 \cup A_2 =  \{(H, H), (H, T)\} \cup \{(H, T)\} = A_1$ 
 7. $A_1 \cap A_2 =  \{(H, H), (H, T)\} \cap \{(H, T)\} = \{(H, H)\}$
+8. $(A_1 \cap A_2)^c =  \{ (H, T), (T, T), (T, H)\}$
 
