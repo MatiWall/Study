@@ -69,5 +69,61 @@ $$P(\{5\} \mid A)= \frac{\{5\} \cap A}{P(A)} = \frac{P(\emptyset)}{P(A)}=0$$
 > The conditional probability generates a new measurable space in which the event is evaluated under the condition $A$.  In this space, the outcomes are restricted to those in $A$, and the probabilities are recalibrated based on this restriction. 
 
 An immediate consequence of the definition of conditional probability is Bayes' rule
-$$P(B\mid A)=\frac{P(A\mid B)P(B)}{P(A)}$$
-<div style="color: red">CONTINUE, explain bayes rule and what it is used for</div>
+$$P(B\mid A)=\frac{P(A\mid B)P(B)}{P(A)}=\frac{P(A \mid B) P(B)}{P(A \mid B) P(B)+P(A \mid B^C) P(B^C)}$$
+
+## Example: Medical Test and Bayes' Rule
+
+### Problem:
+Suppose there is a disease that affects 1% of a population. A test exists for this disease, and it has the following properties:
+- **True positive rate (sensitivity)**: 90% (if you have the disease, the test is positive 90% of the time).
+- **False positive rate**: 5% (if you don’t have the disease, the test is positive 5% of the time).
+
+Given that a person tests positive, we want to find the probability that the person actually has the disease.
+
+### Step 1: Define the events
+- $ D $: The event that the person has the disease.
+- $ D^C $: The event that the person does not have the disease.
+- $ T^+ $: The event that the test result is positive.
+
+We want to find $P(D \mid T^+)$, the probability that the person has the disease given a positive test result.
+
+### Step 2: Apply Bayes' Rule
+Bayes' Rule is given by:
+
+$$
+P(D \mid T^+) = \frac{P(T^+ \mid D) P(D)}{P(T^+)}.
+$$
+
+Where:
+- $ P(T^+ \mid D)$ is the probability that the test is positive given that the person has the disease (this is the sensitivity, 90% or 0.9).
+- $P(D)$ is the prior probability of having the disease (1% or 0.01).
+- $P(T^+)$ is the total probability of testing positive, which can be calculated using the law of total probability:
+
+$$
+P(T^+) = P(T^+ \mid D) P(D) + P(T^+ \mid D^C) P(D^C).
+$$
+
+Here:
+- $P(T^+ \mid D^C)$ is the probability of testing positive given that the person does not have the disease (the false positive rate, 5% or 0.05).
+- $P(D^C)$ is the probability of not having the disease (99% or 0.99).
+
+### Step 3: Calculate $P(T^+)$
+$$
+P(T^+) = (0.9 \times 0.01) + (0.05 \times 0.99) = 0.009 + 0.0495 = 0.0585.
+$$
+
+### Step 4: Apply the formula
+Now, apply Bayes' Rule to compute $ P(D \mid T^+) $:
+
+$$
+P(D \mid T^+) = \frac{0.9 \times 0.01}{0.0585} = \frac{0.009}{0.0585} \approx 0.1538.
+$$
+
+### Interpretation:
+Given that a person tests positive, the probability that they actually have the disease is about **15.38%**. Despite the positive test result, the probability is still relatively low due to the low prevalence of the disease (1%) and the non-zero false positive rate.
+
+## Probability Independence
+In the case of independent probabilities we can visualize it as a rectangle (Fig 2.2), i.e. orthogonal sides (orthogonality is equivalent to independence). The Lebesgue-measure for the rectangle $A\cap B$ is $\mu(A \cap B)=\mu[A] \mu(B)$ i.e. the area. Analogously 
+$$P(A \cap B)=P(A)P(B)$$
+In the case of independence condtional probabilities collapse to unconditional probabilities
+$$P(A \mid B)= \frac{P(A \cap B)}{P(B)}=\frac{P(A)(B)}{P(B)}=P(A)$$

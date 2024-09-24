@@ -45,3 +45,22 @@ $\mathcal{F}_1 = \{\emptyset,\{(H, H), (H, T)\}, \{(T, T), (T, H)\}, \Omega\}$
 7. $A_1 \cap A_2 =  \{(H, H), (H, T)\} \cap \{(H, T)\} = \{(H, H)\}$
 8. $(A_1 \cap A_2)^c =  \{ (H, T), (T, T), (T, H)\}$
 
+
+# 2.4 
+Prove this statement
+$$P(B\mid A)=\frac{P(A\mid B)P(B)}{P(A)}=\frac{P(A \mid B) P(B)}{P(A \mid B) P(B)+P(A \mid B^C) P(B^C)}$$
+using additivity property of measures. 
+
+The statement $P(A)=P(A \mid B) P(B)+P(A \mid B^C) P(B^C)$ trivially holds as it says $P(A)$ is equivalent to the sum of probabilities for $A$ if $B$ plus $A$ if not $B$. We can write $P(A) = P(A \cup B) + P(A \cup B^C) $ and using the definition of Bayes' rule we get the denominator.
+
+# 2.5
+Trivial
+
+# 2.6 
+Show that for a six sided die, the events of throwing an even number $A=\{2, 4, 6\}$ and throwing a number less than or equal to 4 $B=\{1, 2, 3, 4\}$ are also independent.
+
+1. $P(A) = \frac{1}{3}$
+2. $P(B) = \frac{2}{3}$
+3. $P(A \cap B) = P(\{2, 4\}) = \frac{1}{3}$
+
+Checking that $P(A \cap B) = P(A)P(B)$ ✅
