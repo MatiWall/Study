@@ -59,8 +59,10 @@ Trivial
 # 2.6 
 Show that for a six sided die, the events of throwing an even number $A=\{2, 4, 6\}$ and throwing a number less than or equal to 4 $B=\{1, 2, 3, 4\}$ are also independent.
 
-1. $P(A) = \frac{1}{3}$
+1. $P(A) = \frac{1}{2}$
 2. $P(B) = \frac{2}{3}$
 3. $P(A \cap B) = P(\{2, 4\}) = \frac{1}{3}$
 
 Checking that $P(A \cap B) = P(A)P(B)$ ✅
+
+# 2.7
