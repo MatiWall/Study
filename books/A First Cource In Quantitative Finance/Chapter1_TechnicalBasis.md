@@ -169,4 +169,47 @@ A subtle feature of continuous random variables is the fact that a single point 
 A technical consequence of this uncountable feature is not non empty spaces can have zero probability. They don not even have to be small. the set of all rational numbers has zero probability. Such a set is called a null set. A probability space is called complete if all subsets of null sets are included in $\mathcal{F}$. It is possible to include these subsets because most statements concern events with probability larger than zero. This is indicated by the phrase "almost surely". For example the Wiener process as almost surely continuous but non-differential paths i.e. this property is at most violated at events with zero probability.
 
 # Moments of Random Variables
+Even though probability distributions are sufficient to describe random variables they are not very descriptive. Moments are some additional feature to characterize additional features. The fist moment is the expectation value defined in discrete and continuous case as
+$$
+    E[X] = \sum_n x_n f(x_n) \ \text{or} E[X] = \int x f(x) \text{d}x
+$$
 
+The expectation value is defined as the first raw moment, the second moment is usually a central moment i.e. the moment around the expectation value called variance. It is defined as
+$$
+Var[X] = E[(X-E[X])^2]=E[X^2] - E[X]^2
+$$
+
+> Cental moment is a moment taking around a value, often mean, and raw moment is without a reference value. This also means that for $\mu=0$ raw and central moments are identical.
+
+The moments of a normal distribution are defined
+$$
+M_k = \int_{-\infty}^\infty (y-\mu)^k\frac{1}{\sqrt{2\pi\sigma}}e^{-\frac{1}{2}\left( \frac{y-\mu}{\sigma}\right)^2} \text{d}y = 
+\begin{cases}
+0 & \text{for odd} \\
+(k-1)!!\sigma^k  & \text{for even}
+\end{cases}
+$$
+All odd moments disappear as these describe asymmetry. The standardized third moment is called skewness. Even moments are related to the proportion of the probability mass located in the tails of the distribution. The standardized fourth moment is called kurtosis and is $3$ for a normal distribution. For most financial return time series it is between $6$ and $9$, indicating a more heavy tailed distribution than normal.
+
+A related concept is that of mixed moments, the most prominent here being covariance. For two random variables $X$ and $Y$ the covariance is defined
+$$
+Cov[X, Y] = E[(X - E[X])(Y - E[Y])] = E[XY] - E[X]E[Y]
+$$
+
+Covariance is a linear measure between two random variables $X$ and $Y$ as the expectation value is a linear function. If two random variables has covariance zero it does not necessarily mean that they are independent.
+
+## Example 2.5
+Consider $X \sim N(0,1)$ and $Y = X^2$. Obviously these are highly dependent but what is there covariance.
+$$
+\text{Cov}[X, Y] = E[X Y] -E[X]E[Y] = E[X^3] - E[X]E[X^2]=0
+$$
+
+<hr style="border-top: 0.1px dashed;">
+
+If on the other hand two random variables are independent their covariance is guarantied to vanish. Only in the case of normally distributed random variables are vanishing and independence equivalent. It is often more intuitive to use a rescaled version called correlation
+$$
+\rho_{XY} = \frac{\text{Cov}[X,Y]}{\sqrt{\text{Var}[X] \text{Var}[Y]}}
+$$
+Correlation and covariance are in one to one correspondence i.e. uncorrelatied also means zero covariance.
+
+# Characteristic Function and Fourier-Transform

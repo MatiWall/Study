@@ -66,3 +66,15 @@ Show that for a six sided die, the events of throwing an even number $A=\{2, 4, 
 Checking that $P(A \cap B) = P(A)P(B)$ ✅
 
 # 2.7
+Confirm the second equality in  $\text{Var}[X] = E[(X-E[X])^2]=E[X^2] - E[X]^2$
+
+$$
+E[(X-E[X])^2] = E[(X^2+E[X]^2-2X E[X])] = E[X^2] + E[X]^2 - 2 E[X] \cdot E[X] = E[X^2] - E[X]^2 
+$$
+
+# 2.8
+Verify the second equality in $Cov[X, Y] = E[(X - E[X])(Y - E[Y])] = E[XY] - E[X]E[Y]$
+
+$$
+E[(X - E[X])(Y - E[Y])] = E[XY - X E[Y - YE[X] + E[X]E[Y]]] = \newline E[XY] - E[X]E[Y] - E[Y]E[X] + E[X]E[Y] = E[XY] - E[X]E[Y]
+$$
