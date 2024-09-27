@@ -213,3 +213,22 @@ $$
 Correlation and covariance are in one to one correspondence i.e. uncorrelatied also means zero covariance.
 
 # Characteristic Function and Fourier-Transform
+The characteristic function of a random variable is the Fourier-transform of its probability density function
+$$
+\phi(u) = \int_{-\infty}^\infty e^{i u x}f(x) \text{d}x = E[e^{iux}]
+$$ 
+In order to add independent random variables we can use folding i.e. to calculate the probability for rolling a seven with two dies we do this
+$$
+g(k) = \sum_{n=1}^{6} f(n)f(k-n)
+$$
+It is a general feature of Fourier-transforms that the operation of folding in the initial space translates to multiplication in the Fourier-space.
+> when working with sums of independent random variables the pdf of their sum $Z=X+Y$ is given by 
+$$
+f_Z(z) = (f_X \star f_Y)(z)
+$$
+when working in the fourier space with characteristic function this becomes
+$$
+\phi(z) = \phi(x) \phi(z)
+$$
+one can then take the inverse transform to get the distribution.
+## Example 2.6
