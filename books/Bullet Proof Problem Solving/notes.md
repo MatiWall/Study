@@ -1,4 +1,7 @@
+# Introduction
 Problem solving is one, if not the most, sought skill but it is never taught.
+
+Problem solving is a decision making where complexity and uncertainty rules out an obvious answer and where there are consequences that make the work to get good answers wprth it.
 
 # Chapter One: Learning the Bulletproof Problem Solving Approach
 Always have a coherent summary of the problem and a solution path at any point in the project, not just the end. The process of creating active hypothesis is as the heart of the bulletproof problem solving approach.
