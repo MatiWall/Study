@@ -319,4 +319,44 @@ $$
 \phi(z) = \phi(x) \phi(z)
 $$
 one can then take the inverse transform to get the distribution.
-## Example 2.6
+
+> A **characteristic** function in probability theory is a mathematical tool used to uniquely describe the probability distribution of a random variable. It is the Fourier transform of the probability density function (PDF) or the probability mass function (PMF) of a random variable.
+
+> The difference between Probability Density Function (PDF) and Probability Mass Function (PMF) lies in the type of random variable they describe: continuous or discrete.
+
+## Quick Calculation 2.9
+Verify that $X \sim N(\mu,\sigma^2)$ has mean $\mu$ and variance $\sigma^2$. Remembering that the mean it the first moment and that the variance is the second central moment.
+
+$$
+\varphi_X(u) = E[e^{iuX}]=E[e^{iu(\sigma Z + \mu)}]=E[e^{iu\sigma Z}]E[e^{iu\mu}]=E[e^{iu\mu}]\varphi(\sigma u)
+$$
+
+Using that he characteristic function for a standard normal distribution is given by 
+$$
+    \varphi_Z(u) = e^{-\frac{1}{2}u^2}
+$$
+to get
+$$
+    \varphi_X(u) = e^{iu\mu-\frac{1}{2}u^2\sigma^2}
+$$
+Using that 
+$$
+E[X] = -i\frac{\text{d}\varphi(u)}{\text{d}u} \bigg|_{u=0}\ \ \text{and} \ \ E[X^2]=-\frac{\text{d}^2\varphi(u)}{\text{d}u^2} 
+$$
+to get
+
+$$
+E[X] = -i (i\mu - u\sigma^2)\varphi_X(u)\big|_{u=0}=\mu
+$$
+and
+$$
+\text{Var}(X)=-\left((i\mu - u\sigma^2)^2\varphi_X(u) - \sigma^2 \varphi_X(u)\right)\bigg|_{u=0} - \mu=\sigma^2
+$$
+Above could have been done easier using
+$$
+E[X]=E[\sigma Z + \mu] =\sigma E[Z] + \mu = \mu
+$$
+and
+$$
+E[X^2] - E[X]^2=E[\sigma^2 Z^2+\mu^2 + 2\sigma Z] - \mu^2=\sigma^2
+$$
