@@ -72,3 +72,36 @@ holds for $A$ being the event of throwing an even number.
 $$
 E[E[X\mid A]] = E[X\mid A] P(A) + E[X\mid A^C] P(A^C) = 4 \frac{1}{2} + 3 \frac{1}{2}=\frac{7}{2}=3.5
 $$
+
+## 2.5
+A theorem by Kolmogorov states  that every stochastic process $X(t)$ which satisfies the inequality 
+$$
+E[\lvert X(t) - X(s) \rvert^a] \le c \lvert t-s \rvert^{1+b}
+$$
+for $t\gt s$ and a particular set of numbers $a$, $b$ and $c$, has almost surely continuous paths. Show that the Wiener process meets this condition. Use the moment structure of normally distributed random variables (2.31) on page 19.
+
+From the definition of the Wiener process i know that the variance between two times is $t-s$. Considering the moment structure in (2.31) we see that
+$$M_2=\lvert t-s \lvert$$ 
+which match Kolmogorov for $a=2$, $b=0$ and $c=1$
+
+## 2.6
+Assume $N\sim \text{Poi}(\lambda)$ is a Possion-distributed random variable with probability mass function 
+$$
+f(n)=e^{-\lambda}\frac{\lambda^n}{n!}
+$$
+for $n\in \mathbb{N}_0$. Consider a random variable $X$, with
+$$
+X=\sum_{n=0}^N X_n
+$$
+where $X_n$ are independent an identically distributed random variables. Prove that the relation 
+$$
+\varphi(u)=\text{exp}[\lambda(\varphi_n(u)-1)]
+$$
+holds for the characteristic of $X$ and $X_n$. Use the one to one correspondence of conditional probability and conditional distribution functions.
+
+Notice that it is the sum limit $N$ that is passion distributed.
+$$
+\varphi(u) = E[e^{iuX }]
+$$
+
+
