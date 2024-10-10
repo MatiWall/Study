@@ -85,7 +85,7 @@ $$M_2=\lvert t-s \lvert$$
 which match Kolmogorov for $a=2$, $b=0$ and $c=1$
 
 ## 2.6
-Assume $N\sim \text{Poi}(\lambda)$ is a Possion-distributed random variable with probability mass function 
+Assume $N\sim \text{Poi}(\lambda)$ is a Poisson-distributed random variable with probability mass function 
 $$
 f(n)=e^{-\lambda}\frac{\lambda^n}{n!}
 $$
@@ -100,8 +100,96 @@ $$
 holds for the characteristic of $X$ and $X_n$. Use the one to one correspondence of conditional probability and conditional distribution functions.
 
 Notice that it is the sum limit $N$ that is passion distributed.
+Let $g(x)$ be an unknown probability density function of $X$ conditioned on $N$
 $$
-\varphi(u) = E[e^{iuX }]
+ g(x) = \sum_{N=0}^\infty E[X\mid N]f(N)
+$$
+For the conditional characteristic function of $X$ following has to hold
+$$
+E[e^{iuX}\mid N]=\varphi(u)_n^N
+$$
+as $X_n$ are independent and identically distributed. Putting it together 
+$$
+\varphi(u) = E[e^{iuX}] = \sum_{N=0}^\infty E[e^{iuX}\mid N]f(N)=\sum_{N=0}^\infty \varphi(u)_n^N e^{-\lambda} \frac{\lambda^N}{N!}=\sum_{N=0}^\infty e^{-\lambda} \frac{\left( \varphi(u)_n \lambda \right)^N}{N!}=e^{(\varphi(u)_n-1)\lambda}
 $$
 
+> In this exercise, the characteristic function of the random variable $X$ which is the sum of a Poisson-distributed number of independent and identically distributed (i.i.d.) random variables, was found.
 
+> **Why is This Important?**
+This result is useful in probability theory and stochastic processes because it gives a compact way to understand the distribution of sums of random variables when the number of terms is random and Poisson-distributed.
+The form of the characteristic function allows for us to find key properties such as moments (mean, variance, etc.).
+
+
+# Chapter 3
+## 3.1
+Consider the hyperbolic coordinate transformation
+$$
+a_1 = \rho \cosh(\phi) \newline
+a_2 = \rho \sinh(\phi)
+$$
+limited to the coordinate wedge $a_1>0$ and $-a_1 <a_2 < a_1$, see Figure 3.13. How does the operation of scaling a vector affect the hyperbolic radius $\rho$ and hyperbolic angle $\phi$. Use the fact that $\cosh^2(\phi)-\sinh^2(\phi) = 1$ holds.
+
+**Solution** <br>
+Assume we have the vector
+$$
+A = \begin{pmatrix}a_1 \\ a_2 \end{pmatrix}
+$$
+scaling this vector as $s A = B$
+$$
+B = \begin{pmatrix}s \rho \cosh(\phi) \\ s \rho \sinh(\phi) \end{pmatrix}
+$$
+from this we see that it is only the hyperbolic angle that gets scaled. We can express $A$ in terms of the hyperbolic radius and angle using. Using the hint to write 
+$$
+\rho^2 \left( \cosh^2(\phi) - \sinh^2(\phi) \right) = a_1^2-a_2^2
+$$
+from which
+$$
+\rho = \sqrt{a_1^2 - a_2^2}
+$$
+and the hyperbolic angle
+$$
+\phi = \text{atanh}\left(\frac{a_2}{a_1}\right)
+$$
+from which we can write
+$$
+A' = \begin{pmatrix} \rho  \\ \phi \end{pmatrix}
+$$
+i.e. a scaling of $A \rightarrow sA$ gives a scaling of 
+$$A'\rightarrow \begin{pmatrix} s\rho  \\ \phi \end{pmatrix}$$ 
+
+## 3.2
+The outer product is defined as ... . Show that the sum of outer products over a complete set of orthonormal basis vectors is the identity operator
+$$
+\sum_{n=1}^\N \ket{e_n}\bra{e_n} = I
+$$
+**Solution** <br>
+From the definition of the outer product and the basis vectors $\ket{e_n}\bra{e_n}$ is a $N \times  N$ matrix with the only non zero entry being the $n$'th diagonal element. Summing up all these gives the identity.
+
+Alternatively, considering $\ket{a}$ we can
+$$
+\sum_{n=1}^\N \ket{e_n}\bra{e_n} \ket{a} = \sum_{n=1}^\N \ket{e_n}a_1 
+$$
+i.e if $\ket{a}$ was already expressed in terms of the $\ket{e_n}$ this operation does nothing.
+
+## 3.3
+Show that the outer product $\ket{e_k}\bra{e_n}$ for $k, n=1, 2$ form a complete basis of the vector space $\mathbb{R}^{2\times 2}$
+
+**Solution** <br>
+> Remember that forming a complete basis means that the entire vector space can be spanned by a linear combination of the basis parts.
+
+$\ket{e_k}\bra{e_n}$ forms the four matrices
+$$
+\ket{e_0}\bra{e_0} =  \begin{pmatrix} 1 & 0  \\ 0 & 0 \end{pmatrix}
+$$ 
+$$
+\ket{e_1}\bra{e_0} =  \begin{pmatrix} 0 & 0  \\ 1 & 0 \end{pmatrix}
+$$ 
+$$
+\ket{e_0}\bra{e_1} =  \begin{pmatrix} 0 & 1  \\ 0 & 0 \end{pmatrix}
+$$ 
+$$
+\ket{e_1}\bra{e_1} =  \begin{pmatrix} 0 & 0  \\ 0 & 1 \end{pmatrix}
+$$ 
+these are obviously independent. Considering these it follows directly.
+
+## 3.4
