@@ -193,3 +193,19 @@ $$
 these are obviously independent. Considering these it follows directly.
 
 ## 3.4
+Consider the complex space of periodic functions in the interval $[0, 2\pi]$. Show that the exponential Fourier-functions 
+$$
+\ket{\psi_n} = \frac{1}{\sqrt{2\pi}}e^{inx}
+$$
+for $n\in\mathbb{Z}$, form an orthonormal basis.
+**Solution**
+
+To form an orthonormal basis I have to show that the inner product $\braket{\psi_n|\psi_m }$ is $1$ for $n=m$ and $0$ for $n\ne m$.
+For $n+m\ne 0$ it follows
+$$
+\braket{\psi_n|\psi_m } = \int_0^{2\pi}\frac{1}{2\pi}e^{i(n+m)x}\text{d}x 
+$$
+and for $n+m= 0$
+$$
+\braket{\psi_n|\psi_m } = 1
+$$
