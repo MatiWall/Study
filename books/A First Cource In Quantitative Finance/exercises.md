@@ -203,9 +203,88 @@ for $n\in\mathbb{Z}$, form an orthonormal basis.
 To form an orthonormal basis I have to show that the inner product $\braket{\psi_n|\psi_m }$ is $1$ for $n=m$ and $0$ for $n\ne m$.
 For $n+m\ne 0$ it follows
 $$
-\braket{\psi_n|\psi_m } = \int_0^{2\pi}\frac{1}{2\pi}e^{i(n+m)x}\text{d}x 
+\braket{\psi_n|\psi_m } = \int_0^{2\pi}\frac{1}{2\pi}e^{i(m-n)x}\text{d}x 
 $$
-and for $n+m= 0$
+and for $n-m= 0$
 $$
 \braket{\psi_n|\psi_m } = 1
 $$
+
+**Solution**
+
+For  $n\ne m$
+$$
+\braket{\psi_n|\psi_m } = \frac{1}{2\pi}\int_ 0^{2\pi} \left( \cos((m-n)x)+i \sin((m-n)x)\right) \text{d}x=0
+$$
+As both cos and sine are periodic with a period of $2\pi$ and $m-n$ is an integer 
+
+For $n=m$
+$$
+\braket{\psi_n|\psi_m } = \frac{1}{2\pi}\int_ 0^{2\pi} \text{d}x=1
+$$
+
+## 3.5
+The trace of a square matrix is a linear functional, defined as the sum of its rincipal diagonal elements, 
+$$
+\text{tr}[M]=\sum_{n=1}^{N}m_{nn}
+$$
+A further property of the trace is $\text{tr}[AB]=\text{tr}[BA]$ for suitable matrices $A$ and $B$. Show that for a square matrix $M$ the following property holds 
+$$
+\text{tr}[M]=\sum_{n}^{N} \lambda_n
+$$
+which means that the trace os also equal to the sum of eigenvalues.
+
+**Solution**
+
+$$
+\text{tr}[M]=\text{tr}[V\Lambda V^T]=\text{tr}[V^TV\Lambda]=\text{tr}[\Lambda]
+$$
+where i have done an eigenvalue decomposition into the eigen vectors and eigenvalues.
+
+## 3.6
+The matrix exponential of a square matrix $M$ is defined in terms of its taylor series 
+$$
+e^{M}=\sum_{k=0}^\infty \frac{M^k}{k!}
+$$
+prove that an alternative representation is
+$$
+    e^M=V e^{\Lambda} V^{-1} \ \ \text{with} \ \ e^{\Lambda}= \begin{pmatrix}
+e^{\lambda_1} & \cdots & 0 \\
+\vdots & \ddots & \vdots \\
+0 & \cdots & e^{\lambda_n}
+\end{pmatrix}
+$$
+
+**Solution**
+$$
+    e^{V\Lambda V^{-1}}= \sum_{k=0}^\infty \frac{(V\Lambda V^{-1})^k}{k!}=V \left(\sum_{k=0}^\infty \frac{\Lambda^k}{k!} \right) V^{-1}
+$$
+which is the desired result.
+
+## 3.7
+**Solution**
+variation according to $\bra{\beta}$
+$$
+0=\frac{\text{d}}{\text{d}\bra{\beta}}\braket{\epsilon,\epsilon}=\frac{\text{d}}{\text{d}\bra{\beta}} \left(\bra{\beta}X'-\bra{y}\right)\left(X\ket{\beta}-\ket{y}\right)
+$$
+$$
+0= 2X'X\ket{\beta}-2X'\ket{y}
+$$
+
+## 3.8
+Take the two-dimensional random vector $\ket{X}$ to be normally distributed with covariance matrix
+$$
+\Sigma =  \begin{pmatrix}
+\sigma_1^2 &  \sigma_{12} \\
+\sigma_{21} & \sigma_2^2
+\end{pmatrix}
+$$
+
+What is the variance of $Y=\braket{1, X}$ with $\bra{1}=(1,1)$ and what does this correspond to?
+
+**Solution**
+
+$$
+\text{Var}(Y)=\text{Var}(x_1 + x_2)=\text{Var}(x_1) + \text{Var}(x_2) +2\text{Cov}(x_1, x_2)=\sigma_1^2 + \sigma_2^2 +2\sigma_{12}
+$$
+i.e. the sum of two random variables that might have correlation.
