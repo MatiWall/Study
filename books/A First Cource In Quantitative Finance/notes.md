@@ -360,3 +360,52 @@ and
 $$
 E[X^2] - E[X]^2=E[\sigma^2 Z^2+\mu^2 + 2\sigma Z] - \mu^2=\sigma^2
 $$
+
+# Chapter 4: Utility Theory
+Utility theory provides a mathematical framework to analyze and explain rational economic behavior. 
+## Lotteries
+A lottery $L(W)$ describes the situation where a person could receive different wealth levels, but the exct wealth they receive depends on the state of the world, which is uncertain. The probability  $f(w_i)$ represents the likelihood of receiving a specific wealth level. The lottery therefore captures both the wealth outcomes and the associated probabilities.
+
+
+Consider $W:\Omega \rightarrow \mathcal{W}$ that assigns to every state of a world a specific wealth $W(\omega_n)=w_n$. A lottery is a list of all probability masses associated with the different realizations of $w_n$ of the random variable $W$,
+$$
+L(W)=\left(f(w_1), \dots,f(w_n)\right)
+$$
+> Remember: Probability mass function is the probability distribution of a discrete random variable, and provides the possible values and their associated probabilities.
+
+which can also be written as
+$$
+L=(p_1, \dots, p_n)
+$$
+
+## Quick Calculation 4.1
+The compounded lottery will look like
+$$
+L=\left( L_1, L_2 \right)=(\frac{1}{4}, 0, \frac{1}{4}, 0, \frac{9}{20}, \frac{1}{20})
+$$
+
+## Preference Relations and Expected Utility
+Given two lotteries we you might prefer one over the other or be indifferent. The personal preferences is described using preference relations
+$$
+L_1 \ge L_2 \ \leftrightarrow \ L_1\ \text{is better than}\ L_2 \newline
+L_2 \ge L_1 \ \leftrightarrow \ L_2\ \text{is better than}\ L_1 \newline
+L_1 \sim L_2 \ \leftrightarrow \ L_1\ \text{is indifferent to }\ L_2
+$$
+preference relations make it possible to order di
+
+fferent lotteries but it is not always possible to realize such an order due to circular preferences.
+
+Question is then under which conditions a rational preference order can be achieved. John Von Neumann and Oskar Morgenstern postulated four conditions
+
+
+$$
+\begin{aligned}
+1. & \quad \text{Completeness:} \quad L_1 \succ L_2 \quad \text{or} \quad L_2 \succ L_1 \quad \text{or} \quad L_1 \sim L_2 \\
+2. & \quad \text{Transitivity:} \quad \text{If } L_1 \succ L_2 \text{ and } L_2 \succ L_3, \text{ then } L_1 \succ L_3 \\
+3. & \quad \text{Continuity:} \quad \text{If } L_1 \succ L_2 \succ L_3, \text{ then } \exists p \in (0,1) \text{ such that } L_2 \sim p L_1 + (1 - p) L_3\\
+4. & \quad \text{Independence:} \quad \text{If } L_1 \sim L_2, \text{ then for any lottery } L_3 \text{ and any } p \in [0, 1], \\
+   & \quad p L_1 + (1 - p) L_3 \sim p L_2 + (1 - p) L_3 \\
+\end{aligned}
+$$
+
+Axiom 2 ensure that circular preferences can not happen. 
