@@ -363,6 +363,7 @@ $$
 
 # Chapter 4: Utility Theory
 Utility theory provides a mathematical framework to analyze and explain rational economic behavior. 
+> In economics, utility is a measure of the satisfaction that a certain person has from a certain state of the world. 
 ## Lotteries
 A lottery $L(W)$ describes the situation where a person could receive different wealth levels, but the exct wealth they receive depends on the state of the world, which is uncertain. The probability  $f(w_i)$ represents the likelihood of receiving a specific wealth level. The lottery therefore captures both the wealth outcomes and the associated probabilities.
 
@@ -409,3 +410,49 @@ $$
 $$
 
 Axiom 2 ensure that circular preferences can not happen. 
+
+Assuming that these axioms are true it can be shown that there exists a a function $u: \mathcal{W} \rightarrow \mathbb{R}$ such that
+$$
+L_1\ge L_2 \Leftrightarrow \sum_{n=1}^N u(w_n)p_n \ge \sum_{n=1}^N u(w_n)q_n 
+$$
+where 
+* $u(w_n)$ is the utility assigned to a wealth level $w_n$'
+* $p_n$ is the probability of $w_n$ occurring in lottery $L_1$
+* $q_n$ is the probability of $w_n$ occurring in lottery $L_2$
+> Given these four axioms, it is possible to construct a utility function $u(w)$ that assigns a real number (utility) to each possible wealth outcome $u(w)$. This utility function allowsus to rank lotteries based on the expected utility. A lottery $L_1$ is preferred to another lottery $L_2$ if the expected utility of $L_1$ is greater than or equal to $L_2$
+
+The utility function $u(w)$ represents an individuals for wealth outcomes. It is not unique and is determined from an individuals risk preferences.
+
+The functional 
+$$
+U(L)=E[u(W)] = \sum_{n=1}^N u(w_n) p_n
+$$
+is called the von Neumann-Morgenstern-utility or expected utility. With the expected utilities we can now compare lotteries without the need for an extensive list of pairwise preference relations.
+
+> It might seem restrictive that the same wealth states are used in both terms though when we compare lotteries with different sets of wealth states, we can expand the lotteries so they are represented over the same wealth states by introducing "missing" outcomes with zero probabilities. In other words, if two lotteries have different outcomes, we can still represent them as having the same possible outcomes by assigning zero probabilities to the outcomes that don’t occur in one lottery.
+
+## Risk Aversion
+Consider a coin flip game for all your wealth. Assume that your wealth is $V$ participation can be summarized by $\mathcal{W}=\{0, V, 2V\}$ with participation and not participation are described by the lotteries
+$$
+L_1 = \left(\frac{1}{2}, 0, \frac{1}{2}\right) \quad  \text{and} \quad L_2=(0,1,0).
+$$
+No one would actually take this bet even though the expectation value of the two are the same, as people are risk averse, i.e. you get less utility by doubling your wealth than you loose by loosing your entire wealth.
+
+ Assuming a utility function $u(w)=w$ taking the bet or not will have the same utility, i.e. $u(w)=w$ belong to a risk neutral agent. This indicates that risk attitude has to be encoded into the utility. As the marginal utility for receiving a fixed amount of wealth decreases with you initial wealth we expect the following to hold
+ $$
+ \frac{\text{d}u}{\text{d}w}>0 \quad \text{and} \quad \frac{\text{d}^2u}{\text{d}w^2} \le 0
+ $$
+ for a risk-averse agent the curvature will be strictly less than zero.
+
+ ## Measures of Risk Aversion
+ A useful measure for the degree of risk aversion an agent exhibits can be stated as
+ $$
+ \text{ARA}(w)=-\frac{u''(w)}{u'(w)}
+ $$
+ and is known as the absolute risk aversion. For a concave utility $ \text{ARA}(w)\ge 0 $ where equality holds for risk-neutral agents. A version also exists where the current level of risk-aversion is scaled by the current level of wealth
+ $$
+  \text{RRA}(w)=-\frac{w u''(w)}{u'(w)}
+ $$
+
+ ## Certainty Equivalent and Risk Premium
+ 
