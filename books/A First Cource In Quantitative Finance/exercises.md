@@ -288,3 +288,5 @@ $$
 \text{Var}(Y)=\text{Var}(x_1 + x_2)=\text{Var}(x_1) + \text{Var}(x_2) +2\text{Cov}(x_1, x_2)=\sigma_1^2 + \sigma_2^2 +2\sigma_{12}
 $$
 i.e. the sum of two random variables that might have correlation.
+
+# Chapter 4: Utility Theory

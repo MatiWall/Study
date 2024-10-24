@@ -455,4 +455,25 @@ No one would actually take this bet even though the expectation value of the two
  $$
 
  ## Certainty Equivalent and Risk Premium
+ Considering the previous coin flip experiment there is a wealth such that
+ $$
+ E[u(W)]=u(w^*)
+ $$
+ where as the utility function is strictly monotone 
+ $$
+ E[W] \gt w^*.
+ $$
+ A risk averse agent is willing to give up some wealth to avoid uncertainty. The difference between the expected wealth and the certainty level is called the risk premium $\pi$
+ $$
+ E[w] = w^* + \pi.
+ $$
+ In the case where the random noise is small we can write $W=\mu + \epsilon$ giving the risk premium 
+ $$
+ \pi = \frac{1}{2}\text{ARA}(\mu)\sigma^2
+ $$
+ where $\text{ARA}(\mu)$ is the relative risk eversion.
+
+ ## Classes of Utility Functions
+ Multiple versions of utility functions exists.
+
  
