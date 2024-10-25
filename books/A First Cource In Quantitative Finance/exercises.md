@@ -290,3 +290,61 @@ $$
 i.e. the sum of two random variables that might have correlation.
 
 # Chapter 4: Utility Theory
+
+## 4.1
+Find the expectation value of the St. Petersburg paradox
+**Solution**
+
+The expected value van be written
+$$
+V = \sum_{n=0}^\infty 2^{n} p_n = \sum_{n=0}^\infty 2^n\frac{1}{2^{n+1}} = \frac{1}{2}\sum_{n=0}^\infty 1
+$$
+
+## 4.2
+Daniel Bernoulli suggested expected utility to solve the St. Petersburg paradox. He used a logarithm utility 
+$$
+u(w)=ln(w)
+$$
+show that the expected utility os St. Petersburg is finitie with wealth equivalent $w^*=2$
+
+**Solution**
+$$
+E[u(W)] = \sum_{n=0}^\infty u(2^n) \frac{1}{2^{n+1}} =\frac{1}{2}\sum_{n=0}^\infty \ln(2^n) 2^{-n}=\frac{1}{2}\ln(2)\sum_{n=0}^\infty n 2^{-n}=\ln(2)
+$$
+From which we can read off the certainty equivalent wealth to be $w^*=2$
+
+## 4.3
+Suppose you own wealth $w$ and you are facing a potential loss $l$ with probability $p$. An insurance company is willing to ensure an arbitary loss $\eta$ for $\eta p$. Assuming you are risk averse, what amount $\eta^*$ would you ensure under expected utility maximization.
+
+**Solution**
+
+The expected wealth is
+$$
+E[W] = (w-l+\eta-\eta p)p + (w - \eta p)p
+$$
+the expected utility is
+$$
+E[u(W)] = u(w-l+\eta-\eta p)p + u(w - \eta p)(p-1).
+$$
+Differentiating with respect to $\eta$ and equating to zero
+$$
+0=(1-p)pu'(w-l+\eta-\eta p) -p(p-1) u'(w-\eta p)
+$$
+$$
+u'(w-\eta p)=u'(w-l+\eta-\eta p) \newline
+w-\eta p=w-l+\eta-\eta p \newline
+\eta = l.
+$$
+Optimally you should ensure $\eta^* = l$.
+
+## 4.4
+For the special class of utility functions $u(w)=w-be^{-aw}$ with $a,b \gt 0$ the expected utility takes the form
+$$
+\begin{align*}
+    E[u(W)] &= E[W] - b E[e^{-aw}] \newline
+    &= E[W] - b e^{-aE[W]}\cdot  E[e^{-a(W-E[W])}].
+\end{align*}
+$$
+Show that $E[e^{-a(W-E[W])}]$ does not only take the variance into account but all higher central moments.
+
+
