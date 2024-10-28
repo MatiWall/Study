@@ -346,5 +346,18 @@ $$
 \end{align*}
 $$
 Show that $E[e^{-a(W-E[W])}]$ does not only take the variance into account but all higher central moments.
+**Solution**
+$$
+E[e^{-a(W-E[W])}]=\int_{-\infty}^\infty e^{-a(w-\mu)} \rho(w) \text{d}w
+$$
+Taylor expanding the exponential
+$$
+=\int_{-\infty}^\infty \left(\sum_{n=0}^\infty \frac{(-a(w-\mu))^n}{n!}\right) \rho(w) \text{d}w = \sum_{n=0}^\infty \frac{(-a^n)}{n!}\int_{-\infty}^\infty (w-\mu)^n \rho(w) \text{d}w = \sum_{n=0}^\infty \frac{(-a^n)}{n!} M_k
+$$
 
+The integral is the definition of the centralized moment of order n.
+
+## 4.5
+
+Show that hyperbolic absolute risk aversion with $\beta=0$ in the limit $\gamma \to 1$ specializes to Bernoulli's logarithmic utility.
 
