@@ -361,3 +361,36 @@ The integral is the definition of the centralized moment of order n.
 
 Show that hyperbolic absolute risk aversion with $\beta=0$ in the limit $\gamma \to 1$ specializes to Bernoulli's logarithmic utility.
 
+**Solution**
+
+$$u(w)=\frac{(w+\beta)^{1-\gamma}-1}{1-\gamma}=\frac{(w)^{1-\gamma}-1}{1-\gamma}$$
+$$
+u(w)=\lim_{\gamma \to 1}\frac{(w)^{1-\gamma}-1}{1-\gamma}
+$$
+defining $a=1-\gamma$
+$$
+u(w)=\lim_{a \to 0}\frac{w^a-1}{a}
+$$
+which is $u(w)=\ln(w)$
+
+## 4.6
+Assume that the random variable $W$ has mean $\mu$ and variance $\sigma^2$. Mean variance analysis postulates that the expected utility increases with $\mu$ and decreases with $\sigma^2$. Show that quadratic utility coincides with these postulates.
+
+**Solution**
+
+Quadratic utility takes the form $u(w)=-(\eta-w)^2$ and $w \lt \eta$
+
+$$
+
+\begin{align}
+   E[u(w)]&=E[-(\eta-\mu-W+\mu)^2]=-E[(\eta-\mu)^2] - E[(W-\mu)^2]+2E[\eta-\mu]E[W-\mu]\\
+    &=-E[(\eta-\mu)^2] - E[(W-\mu)^2]=-(\eta-\mu)-\sigma^2
+\end{align}
+$$
+from which it is seen that the utility increases with $\mu$ and decreases with $\sigma$
+
+## 4.7
+Assume that the commodity prices in the optimization pproblem (4.34) with (4.36) are $p_1=1$ and $p_2=2$. Show that in the optimum $u(c_1^*, c_2^*)=w/\sqrt{8}$
+
+**Solution**
+
