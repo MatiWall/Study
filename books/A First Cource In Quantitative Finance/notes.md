@@ -477,6 +477,16 @@ No one would actually take this bet even though the expectation value of the two
  Multiple versions of utility functions exists.
 
  ## Constraint Optimization (Lagrange multiplier)
- 
+ The lagrange multiplier method is a trick to solve constraint optimization problems. 
 
+Assume you have the surface $u(x,y)$ with the constraint(s) $g(x,y)=0$. It can be shown that at an optimum $\nabla u$ and $\nabla g$ are parallel i.e. the differ only by a scaling factor (the lagrange multiplier). We can therefore write
+$$
+\nabla u(x,y) = \lambda \nabla g(x,y)
+$$ 
+under the constraint $g(x,y)=0$. In this two dimensional case this gives a set of three equations with three unknowns that we can solve. It easily generalizes to more dimensions.
 
+Lagrangians trick was to invent the Lagrangian
+$$
+
+\mathcal{L}(x, y, \lambda)=u(x,y)+\lambda g(x,y)$$
+The equations to solve are then the partial derivatives of the lagrangian in all variables. Again this easily generalizes to $n$ variables.
