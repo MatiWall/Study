@@ -390,7 +390,54 @@ $$
 from which it is seen that the utility increases with $\mu$ and decreases with $\sigma$
 
 ## 4.7
-Assume that the commodity prices in the optimization pproblem (4.34) with (4.36) are $p_1=1$ and $p_2=2$. Show that in the optimum $u(c_1^*, c_2^*)=w/\sqrt{8}$
+Assume that the commodity prices in the optimization problem (4.34) with (4.36) are $p_1=1$ and $p_2=2$. Show that in the optimum $u(c_1^*, c_2^*)=w/\sqrt{8}$
 
 **Solution**
+
+Having 
+$$
+\nabla u = \lambda \cdot \nabla h \\
+w=p_1 c_1 + p_2 c_2
+$$
+gives the three equations
+$$
+\frac{1}{2}\sqrt{\frac{c_2}{c_1}}=\lambda p_1 \\ 
+\frac{1}{2}\sqrt{\frac{c_1}{c_2}}=\lambda p_2 \\
+w=p_1 c_1 + p_2 c_2
+$$
+
+inserting the values $p_1=1$ and $p_2=2$
+$$
+\frac{1}{4}\frac{c_2}{c_1}=\lambda \\ 
+\frac{1}{4}\frac{c_1}{c_2}=\lambda 4 \\
+w= c_1 + 2 c_2
+$$
+
+$$
+c_2=4\lambda c_1 \\ 
+c_1 = 4\lambda 4 c_2 \\
+w= c_1 + 2 c_2
+$$
+
+inserting the first equation into the second
+$$
+c_1 = 4^3 \lambda^2 c_1 \\
+c_1(1-4^3 \lambda^2) = 0 \\
+\lambda = \pm \frac{1}{4^{\frac{3}{2}}}
+$$
+inserting this into the first equation we see
+$$
+c_2 = \pm \frac{c_1}{2}
+$$
+
+from this we can get $c_1$ as 
+$$
+w=c_1 \pm c_1  \quad \Rightarrow \quad c_1 = \frac{w}{2}
+$$
+
+Inserting this into the utility we see that only the positive solution of $c_2$ is valid as we would otherwise get imaginary utility.
+$$
+u(c_1, c_2) = \sqrt{\frac{w}{2}\cdot \frac{w}{4}} = \frac{w}{\sqrt{8}}
+$$
+as desired.
 

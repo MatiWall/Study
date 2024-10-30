@@ -476,4 +476,7 @@ No one would actually take this bet even though the expectation value of the two
  ## Classes of Utility Functions
  Multiple versions of utility functions exists.
 
+ ## Constraint Optimization (Lagrange multiplier)
  
+
+
