@@ -490,3 +490,42 @@ $$
 
 \mathcal{L}(x, y, \lambda)=u(x,y)+\lambda g(x,y)$$
 The equations to solve are then the partial derivatives of the lagrangian in all variables. Again this easily generalizes to $n$ variables.
+
+# Chapter 5: Architecture of financial markets
+## The Arrow-Debreu World
+
+The Arrow-Debreu model is a fundamental model in general equilibrium theory that provides a mathematical framework to analyze supply and demand in an idealize world.
+
+> General equilibrium theory is a branch of economics that examines how supply and demand interact across multiple markets to determine prices and allocations of goods and resources in an entire economy. 
+
+Normally an Arrow-Debreu model consider the optimal allocation of $N$ consumption goods $c_n$. Here lets consider a single consumption good but in different states of the world $c_\omega$ for $\omega=1,..., \Omega$. The framework looks like 
+
+* Two time perids $t=0$ (today) and $t=T$ (future)
+* Consumption today $c_0$ is certain.
+* Consumption in the future $c_\omega$ depends on which state of the world that realizes $\omega$.
+* An agent has an initial wealth $w$
+* No trading costs, taxes, etc.
+
+The model is now optimizing the expected utility under the wealth constraint 
+$$
+    c_0 + \braket{\psi\mid c}=w
+$$
+where $\psi_\omega$ is the price on consuming a single unit of good in the state $\omega$.
+
+The problem of maximizing the expected utility can be done using lagrange multiplier method on the form
+$$
+\max_{C} \mathcal{L} = \max_{C} \ U[C] + \lambda \left(w-c_0-\sum_{\omega=1}^{\Omega} \psi_\omega c_\omega \right)
+$$
+Taking the derivative of he Lagrangian with respect to the consumption variables gives the first order equations
+$$
+\frac{\partial U}{\partial c_0}=\lambda \quad \text{and} \quad \frac{\partial U}{\partial c_\omega}=\lambda \psi_\omega 
+$$
+Dividing the second by the first gives the good prices
+$$
+\psi_\omega = \frac{\frac{\partial U}{\partial c_\omega}}{\frac{\partial U}{\partial c_0}}
+$$
+
+We can choose the expected utility on the form
+$$
+    U[C]=u(c_0) + e^{-\rho T} \sum_{\omega=1}^\Omega u(c_\omega)p_\omega
+$$
