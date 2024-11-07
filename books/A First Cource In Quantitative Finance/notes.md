@@ -529,3 +529,29 @@ We can choose the expected utility on the form
 $$
     U[C]=u(c_0) + e^{-\rho T} \sum_{\omega=1}^\Omega u(c_\omega)p_\omega
 $$
+where the exponential factor describes the time preference of consumption. Inserting the expected utility into the equation for state prices gives
+$$
+\psi_\omega = e^{-\rho T}p_\omega\frac{u'(c_w)}{u'(c_0)}=-\text{MRS}
+$$
+
+> The marginal rate of substitution (MRS) is the quantity of one good that a consumer can forego for additional units of another good at the same utility level. MRS is one of the central tenets in the modern theory of consumer behavior as it measures the relative marginal utility.
+
+To calculate the MRS between two goods consider the total utility of these goods 
+$$
+U = u(c_0)+e^{-\rho T}p_\omega u(c_\omega)
+$$
+and do a total variation
+$$
+\text{d}U = u'(c_0)\text{d}c_0 + e^{-\rho T}p_\omega u'(c_\omega)\text{d}c_\omega=0
+$$
+from which 
+$$
+\frac{\text{d} c_0}{\text{d}c_\omega}=-e^{-\rho T} p_\omega\frac{u'(c_\omega)}{u'(c_0)}
+$$
+Notice that it is negative as you will have to give up consumption today to gain in state $\omega$. It shows how much current consumption a consumer is willing to give up for in order to consume 1 unit more of $c_\omega$ in the future. Intuitively it depends on the time preference, the probability for $c_\omega$ and the ratio of marginal utilities.
+
+> Marginal utility is the added satisfaction that a consumer gets from having one more unit of a good or service. The concept of marginal utility is used by economists to determine how much of an item consumers are willing to purchase.
+
+Guess it is the marginal utilities as if you are already going to consume a lot in $c_\omega$ you are not willing to give up much consumption today.
+
+## The Portfolio Selection Problem
