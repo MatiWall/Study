@@ -555,3 +555,29 @@ Notice that it is negative as you will have to give up consumption today to gain
 Guess it is the marginal utilities as if you are already going to consume a lot in $c_\omega$ you are not willing to give up much consumption today.
 
 ## The Portfolio Selection Problem
+Assume we have a matrix $D\coloneqq d_{\omega n}$ i.e. the payoff of security $n$ in state $\omega$. If you at time $t=0$ incests in security $S_n$ at price $s_n$ you are entitled to payoff $d_{\omega n}$ at time $T$. Assume that $\theta_n$ is the cunatity of $S_n$ you hold then 
+$$
+D \ket{\theta}=\ket{c}
+$$
+
+> Securities enable consumers to optimize their consumption over time and under different future states by balancing immediate needs with anticipated future conditions. This flexibility is essential for long-term planning, risk management, and efficient resource allocation, allowing for consumption smoothing in a way that aligns with preferences, risk tolerance, and expectations.
+
+we now have the wealth constraint 
+$$
+c_0 + \sum_{n=1}^N s_n \theta_n = c_0 + \braket{s \mid \theta}=w
+$$
+Assume that there exists a state vector 
+$$
+\bra{s}=\bra{\psi}D
+$$
+to get
+$$
+c_0 + \bra{\psi}D\ket{\theta}=c_0 + \braket{\psi \mid c}=w
+$$ 
+which is dentical to what we saw in the Arrow-Debreu world. This holds if the financial market contains a set of $\Omega$ linearly independet securities. In that case we can do
+$$
+\bra{s}D^T \left(D D^T\right)^{-1}=\bra{\psi}.
+$$
+Remember that $D$ is not necessarily square. Such a market is called complete as every possible payoff is attainable by a linear combination of tradable securities.
+
+UNDERSTAND THE DIFFERENCE BETWEEN STATE PRICE AND SECURITY PRICE
