@@ -580,4 +580,9 @@ $$
 $$
 Remember that $D$ is not necessarily square. Such a market is called complete as every possible payoff is attainable by a linear combination of tradable securities.
 
-UNDERSTAND THE DIFFERENCE BETWEEN STATE PRICE AND SECURITY PRICE
+> **State Price**: The cost today of securing a unit of wealth in a particular state of the world in the future. It reflects the marginal value of wealth in that state, incorporating risk and time preferences. <br>
+> **Security Price**: The current price of a security based on its entire payoff profile across states, effectively a weighted sum of state prices and the security’s payoffs in each state.
+
+## Preference-Free Results
+
+> **Fundamental theorem of asset pricing**: Sets upp the necessary conditions for a market to be arbitrage free and complete. A complete market is one in which a contingent claim can be replicated.
