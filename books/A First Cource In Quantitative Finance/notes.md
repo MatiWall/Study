@@ -585,4 +585,46 @@ Remember that $D$ is not necessarily square. Such a market is called complete as
 
 ## Preference-Free Results
 
-> **Fundamental theorem of asset pricing**: Sets upp the necessary conditions for a market to be arbitrage free and complete. A complete market is one in which a contingent claim can be replicated.
+The portfolio selection problem can be expressed as
+$$
+
+\ket{C} = \begin{bmatrix} 
+    c_0 \\ 
+    \ket{c}
+\end{bmatrix}
+= 
+\begin{bmatrix} 
+    w \\ 
+    \ket{0}
+\end{bmatrix}
++
+\begin{bmatrix} 
+    -\bra{s} \\ 
+    D
+\end{bmatrix}
+\ket{\theta}
+$$
+which reproduces the equations 
+$$
+    c_0 + \braket{s \mid \theta} = w \newline
+    \ket{c} = D \ket{\theta}
+$$
+i.e. equation 5.10 and 5.11. 
+
+Doing a small change to our portfolio $\ket{\theta^*}=\ket{\theta} + \ket{\eta}$ leads to the change in consumption
+$$
+\ket{C^*}-\ket{C}=\begin{bmatrix} 
+    -\bra{s} \\ 
+    D
+\end{bmatrix}
+\ket{\eta}
+$$
+in the case where $\ket{C^*}-\ket{C}>0$ this is called an arbitrage opportunity as the portfolio change $\ket{\eta}$ offers consumption for free. Making two structural assumptions about the financial market. First, more is always better and second, arbitrage opportunities does not exists.
+
+
+> **Fundamental theorem of asset pricing**: Sets up the necessary conditions for a market to be arbitrage free and complete. A complete market is one in which a contingent claim can be replicated.
+
+**Fundamental theorem of asset pricing**- Following statements are equivalent
+
+1. There are no arbitrage opportunities 
+2. There is a strictly positive state price vector $\bra{\psi} \gg \bra{0}: \bra{s}=\bra{\psi}D $
