@@ -622,9 +622,17 @@ $$
 in the case where $\ket{C^*}-\ket{C}>0$ this is called an arbitrage opportunity as the portfolio change $\ket{\eta}$ offers consumption for free. Making two structural assumptions about the financial market. First, more is always better and second, arbitrage opportunities does not exists.
 
 
-> **Fundamental theorem of asset pricing**: Sets up the necessary conditions for a market to be arbitrage free and complete. A complete market is one in which a contingent claim can be replicated.
-
 **Fundamental theorem of asset pricing**- Following statements are equivalent
 
 1. There are no arbitrage opportunities 
 2. There is a strictly positive state price vector $\bra{\psi} \gg \bra{0}: \bra{s}=\bra{\psi}D $
+3. There is an agent with strictly monotonic increasing preferences $U$ who realizes an optimum in the portfolio selection problem.
+
+> **Fundamental theorem of asset pricing**: Sets up the necessary conditions for a market to be arbitrage free and complete. A complete market is one in which a contingent claim can be replicated.
+
+All of the above statements are equivalent. In order to prove this we first need some math. 
+
+**Separating hyperplane theorem for closed cones**
+$M$ and $K$ are closed convex cones in $\mathbb{R}^N$ that intersects exactly at zero ($M \cap K = \{0\}$). If $K$ does not contain a linear subspace other than $\{0\}$ then there is a non zero linear functional $L$ such that $L[m]\le L[k]$. 
+
+This mean that we can seperate the two cones by a hyperplane in such a way that all points in $M$ lay on one side and all points in $K$ on the other side. This is intuitively clear as it is two closed convex cones.
