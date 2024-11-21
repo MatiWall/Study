@@ -636,3 +636,64 @@ All of the above statements are equivalent. In order to prove this we first need
 $M$ and $K$ are closed convex cones in $\mathbb{R}^N$ that intersects exactly at zero ($M \cap K = \{0\}$). If $K$ does not contain a linear subspace other than $\{0\}$ then there is a non zero linear functional $L$ such that $L[m]\le L[k]$. 
 
 This mean that we can seperate the two cones by a hyperplane in such a way that all points in $M$ lay on one side and all points in $K$ on the other side. This is intuitively clear as it is two closed convex cones.
+
+**Closedness**: A set of points $K$ is called closed if you for any point outside $K$ can make a circle with radius $\epsilon$ where the interior of this disk is also outside $K$. It is closed if the circumference is included in the set and open if not. 
+
+**Convexity**: A set of points $M$ is called convex if for two arbitary points in $x$ and $y$ the linear combination
+$$
+\lambda x+ (1-\lambda)y, \quad 0\le \lambda \le 1
+$$
+is also in $M$.
+
+**Closed convex cones**: A set of points $K$ is a closed cone if it is closed and convex, and if for a point $k$ in $K$, $\alpha k$ for $\alpha \ge 0$ is also in $K$. From this definition an orthant is a closed convex clone. Lines and planes that extends infinitely in both direction can also be closed convex cones.
+
+Using the above we can now prove the connection between the points in the fundamental theorem of asset pricing.
+
+### 1 implies 2
+$$
+M = \bigg\{m: \ket{m} = \begin{bmatrix} 
+    -\bra{s} \\ 
+    D
+\end{bmatrix} 
+\ket{\eta}, \eta \in \mathbb{R}^N
+\bigg\}
+$$
+The points in $m$ span a linear space in $\mathbb{R}^{\Omega+1}$.
+if there is no arbitrage then, from the fundamental theorem of asset pricing, $M$ intersects the half-space $K$ defined by
+$$
+K = \bigg\{k \in \mathbb{R}^{\Omega+1} : \ket{k} \ge 0 \bigg\}
+$$ 
+at $M \cap K = \{0\}$. $M$ is a linear sub-space in $\mathbb{R}^{\Omega+1}$. This satisfies the condition for the separating hyperplane theorem.
+
+>**Riesz Representation Theorem**;
+>Let $H$ be a Hilbert space over the field of real or complex numbers. For every continuous linear functional $f: H \to \mathbb{F}$ where $\mathbb{F} = \mathbb{R}$ or $\mathbb{C}$, there exists a unique element $ v \in H $ such that for all $ u \in H $, $$ f(u) = \braket{u\mid v} $$
+Moreover, the norm of the functional $f$ is equal to the norm of $v$:
+>$$
+|f| = |v|
+$$
+
+From Riesz Representation Theorem we know that a linear function for every vector int he plane $M$ is given by the inner product with a bra, but which. We have to choose a bra such that the inner product with any $\ket{m}$ is smaller than with any $\ket{k}$.
+
+<p style="color: red">DONT UNDERSTAND WHY IT HAS TO BE COPLANAR - Come back section 5.3 </p>
+
+## Pareto-Optimal Allocation and the Representative Agent
+The fundamental theorem of asset pricing hold for both complete and incomplete markets
+> For a market to be complete it need two things
+> 1. Negligible transaction cost (Perfect information and Perfect competition)
+> 2. Every asset in every possible state of the world has a price.
+
+> Pareto Optimal means that there is no way make one person better off without making another worse off.
+
+---
+
+**Theorem 5.3 (Equilibrium Allocation)** Consider an M-agents financial economy with equilibrium portfolio holdings $on\ket{\theta_1}, \ket{\theta_2},\dots, \ket{\theta_n}$. If the market is complete then the allocation of consumption is pareto-optimal.
+
+---
+
+> Equilibrium holding means that supply and demand for a good is balanced. In theory a free market should be in equilibrium.
+
+If a market has arbitrage opportunities it can not be in equilibrium but the inverse statement is not necessarily true. A market can be free of arbitrage and not be in equilibrium.
+
+## Market Completenes and Replicating Portfolio
+
+
