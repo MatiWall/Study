@@ -694,6 +694,23 @@ The fundamental theorem of asset pricing hold for both complete and incomplete m
 
 If a market has arbitrage opportunities it can not be in equilibrium but the inverse statement is not necessarily true. A market can be free of arbitrage and not be in equilibrium.
 
+> **Frictionless Markets**: A markets is said to be frictionless if there is no transaction cost. A complete market is frictionless but the oppisite is not necessarily true.
+
+An importatn feature of complete markets is the existence of an representative agent.
+
+>**Representative Agent**: A model is said to have a reppresentative agent if all agents of the same types are identical. Alternatively it may be that the agents behaviour differ but the aggregated behaviour can be representet as a single agent.
+
+Consider a multi-agent economy, each agent have to maximize their exepcted utility subject to their wealth constraint
+$$
+\max_{\ket{C_m}} U_m[C_m] \quad \text{subject to} \quad \begin{bmatrix} 
+    1 & \bra{\psi}
+\end{bmatrix} 
+\ket{C_m}=w_m
+$$
+where $C_m$ is a consumption vector where $c_0$ is certain consumption today. $\psi_n$ is the price of a good in units of $c_0$ and $w$ is the wealth.
+
+<p style="color: red">Understand units in above<p>
+
 ## Market Completenes and Replicating Portfolio
 
 
