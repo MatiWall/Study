@@ -686,7 +686,7 @@ The fundamental theorem of asset pricing hold for both complete and incomplete m
 
 ---
 
-**Theorem 5.3 (Equilibrium Allocation)** Consider an M-agents financial economy with equilibrium portfolio holdings $on\ket{\theta_1}, \ket{\theta_2},\dots, \ket{\theta_n}$. If the market is complete then the allocation of consumption is pareto-optimal.
+**Theorem 5.3 (Equilibrium Allocation)** Consider an M-agents financial economy with equilibrium portfolio holdings $\ket{\theta_1}, \ket{\theta_2},\dots, \ket{\theta_n}$. If the market is complete then the allocation of consumption is pareto-optimal.
 
 ---
 
@@ -694,13 +694,13 @@ The fundamental theorem of asset pricing hold for both complete and incomplete m
 
 If a market has arbitrage opportunities it can not be in equilibrium but the inverse statement is not necessarily true. A market can be free of arbitrage and not be in equilibrium.
 
-> **Frictionless Markets**: A markets is said to be frictionless if there is no transaction cost. A complete market is frictionless but the oppisite is not necessarily true.
+> **Frictionless Markets**: A markets is said to be frictionless if there is no transaction cost. A complete market is frictionless but the opposite is not necessarily true.
 
-An importatn feature of complete markets is the existence of an representative agent.
+An important feature of complete markets is the existence of an representative agent.
 
->**Representative Agent**: A model is said to have a reppresentative agent if all agents of the same types are identical. Alternatively it may be that the agents behaviour differ but the aggregated behaviour can be representet as a single agent.
+>**Representative Agent**: A model is said to have a representative agent if all agents of the same types are identical. Alternatively it may be that the agents behavior differ but the aggregated behavior can be represented as a single agent.
 
-Consider a multi-agent economy, each agent have to maximize their exepcted utility subject to their wealth constraint
+Consider a multi-agent economy, each agent have to maximize their expected utility subject to their wealth constraint
 $$
 \max_{\ket{C_m}} U_m[C_m] \quad \text{subject to} \quad \begin{bmatrix} 
     1 & \bra{\psi}
@@ -709,7 +709,31 @@ $$
 $$
 where $C_m$ is a consumption vector where $c_0$ is certain consumption today. $\psi_n$ is the price of a good in units of $c_0$ and $w$ is the wealth.
 
-<p style="color: red">Understand units in above<p>
+Maximizing using the Lagrange formalism to get
+$$
+\frac{\partial U_m}{\partial \ket{C_m}}=\lambda_m \begin{bmatrix} 
+    1 & \bra{\psi}
+\end{bmatrix}
+$$
+where $\lambda_m$ for consumption at $t=0$ is the marginal utility. 
+Considering the entire economys social welfare 
+$$
+U[C]= \sum_{m=1}^M \frac{1}{\lambda} U_m[C_m]
+$$
+to be maximized under the aggregated wealth constraint $W=\sum_{m=1}^{M} w_m$
+$$
+\max_{\ket{C_1},\dots,\ket{C_M}}U[C] \quad \text{subject to} \quad \sum_{m=1}^{M} \begin{bmatrix} 
+    1 & \bra{\psi}
+\end{bmatrix} 
+\ket{C_m}=W
+$$
+Using the Lagrangian formalism once more to get $m$ first order equations
+$$
+\frac{\partial U}{\partial \ket{C_m}}=\lambda \begin{bmatrix} 
+    1 & \bra{\psi}
+\end{bmatrix} 
+$$
+
 
 ## Market Completenes and Replicating Portfolio
 
