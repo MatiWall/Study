@@ -729,12 +729,64 @@ $$
 $$
 Using the Lagrangian formalism once more to get $m$ first order equations
 $$
-\frac{\partial U}{\partial \ket{C_m}}=\lambda \begin{bmatrix} 
+\frac{1}{\lambda_m}\frac{\partial U}{\partial \ket{C_m}}=\lambda \begin{bmatrix} 
     1 & \bra{\psi}
 \end{bmatrix} 
 $$
+where does $\lambda_m^{-1}$ come from?
+
+Using the result from the individual optimization to get the following
+$$
+(1-\lambda) \begin{bmatrix} 
+    1 & \bra{\psi}
+\end{bmatrix}=0
+$$
+i.e. the socail welfare function can be interpreted as the expected utility of a representative agent. 
+
+## Market Completeness and Replicating Portfolio
+Complete markets have unique state prices. A consequence of this is that in a complete market every payoff can be replicated by a portfolio of trades securities. When there is no arbitrage the price of the replicating portfolio has to equal the security it tries to replicate.
+
+A market is complete if $D$ contains a full set of $\Omega$ linearly independent securities, i.e. we can use the securities as a basis.
+
+An arbitrage free and complete market determines a risk free rate independent on wether a zero-coupon bond trades.
+
+---
+#### Example 5.3
+
+Consider the financial market
+$$
+D=\begin{bmatrix} 
+    1 & 4 & 2 \\ 2 & 0 & 4
+\end{bmatrix}
+\quad \text{and} \quad
+\bra{s}=\begin{bmatrix} 
+    1 & 2 & 2
+\end{bmatrix}
+$$
+A new security $S_4$ is introduces into the market with payoff vector 
+$$
+\ket{d_4}=\begin{bmatrix} 
+    3 \\ 2
+\end{bmatrix}
+$$
+How can $S_4$ be replicated?
 
 
-## Market Completenes and Replicating Portfolio
+**Solution** <br>
+The first two columns in $D$ are linearly independent and can be used to replicate $S_4$,
 
+$$
+D^*=\begin{bmatrix} 
+    1 & 4 \\ 2 & 0
+\end{bmatrix}
+$$
+the replicating portfolio is then
+$$
+\ket{\theta_4}=\begin{bmatrix} 
+    1 \\ \frac{1}{2}
+\end{bmatrix}
+$$
 
+Continue
+
+---
