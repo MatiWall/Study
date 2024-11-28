@@ -787,6 +787,30 @@ $$
 \end{bmatrix}
 $$
 
-Continue
+which solved the problem $\ket{d_4}=D^* \ket{\theta_4}$, from which the fair price is given as 
+$$
+s_4 = \braket{s_4|\theta_4} = 
+\begin{bmatrix} 
+    1 & 2
+\end{bmatrix} 
+\begin{bmatrix} 
+    1 \\ \frac{1}{2}
+\end{bmatrix}
+= 2
+$$
+As we can choose the basis arbitrarily there is multiple replicating portfolios all with the same price.
 
----
+If the market is not complete there will not be a single price but instead a range of prices. These are all fair and does not lead to arbitrage. In the real market this is observed as a bid ask spread. The consequences of an incomplete market can be summarized as:
+
+1. The state price form is not unique leading to more than one arbitrage free security price
+2. As $D$ does not have a complete basis we can not find a replicating portfolio for an arbitrary security (alternatively you can say that all payoffs are not attainable). All unattainable securities adds a dimension to $D$ bringing it closer to complete.
+
+## Martingale Measures and Duality
+In probability theory a martingale describes a fair game. A stochastic process is called a martingale if
+$$
+E[X_{t+1}|\mathcal{F_t}]=X_t
+$$
+i.e. the best prediction for the next value is the current value.
+
+> A martingale is a sequence of random variables (i.e., a stochastic process) for which, at a particular time, the conditional expectation of the next value in the sequence is equal to the present value, regardless of all prior values.
+
