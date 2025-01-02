@@ -836,3 +836,5 @@ $$
 s_n = \frac{1}{1+r}E^Q[d_n]
 $$ 
 i.e. the value of a security $s_n$ is the expectation of the future payoffs under the $Q$ measure disounted to today using the risk free rate. It is also called the risk-neutral probability measure as only a risk neutral agent would ignore utility and focus only on expected payoffs.
+
+Notice that in an incomplete market we expect a continuum of equivalent martingale measures as the state prices is no longer unique and $q_n$ is defined using it.

@@ -441,3 +441,22 @@ u(c_1, c_2) = \sqrt{\frac{w}{2}\cdot \frac{w}{4}} = \frac{w}{\sqrt{8}}
 $$
 as desired.
 
+# Chapter 5: Architecture of Financial Markets
+ 
+## 5.1
+Assume that the von Neumann-Morgenstern-utility is a time separable functional of the form
+$$
+U[C]=u(c_0)+e^{-\rho T}\sum_{\omega=1}^\Omega u(\omega)p_\omega
+$$
+Show that the price of an arbitary security can be written 
+$$
+s_n = E[Md_n]
+$$
+where the random variable $M$ is called the stochastic discount factor (SDF), given by
+$$
+M = e^{\rho T}\frac{u'(C)}{u'(c_0)}
+$$
+
+**Solution**
+
+> The price of an asset at time $t$ is the expectation of the discounted value from $t+1$ based on the information available at $t$.
