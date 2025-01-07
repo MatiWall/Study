@@ -42,4 +42,28 @@ start over.
 
 ## Chapter 4. Make Learning Secondary
 * If learning becomes a result of trying to solve a problem it will be easier and faster.
-* 
+* We are more likely to reach our learning goals if we are driven by a deeper desire than just "I want to learn". We can be motivated by
+    * Explanation - why does something happpen'
+    * Interpretation
+    * Application - How can i use this knowledge
+    * Perspective - How else can i look at this
+    * Empathy - How is this other person looking at it
+    * Self-knowledge - Who am I
+
+* Problem based learning is a way of focusing on real world application of knowledge.
+* Gamification - Can make learning more fun and desireable and make learning accidental. It can, however not replace a deeper desire. 
+
+## Chapter 5. Teaching to learn
+* Tackling learning with the mindset that you will have to teach it will improve your understanding as you take more responsibility for your learning. You will easily find holes in your understanding when you consider how you would teach it.
+   * Students how are tutoring learn significantly more than those who are not.
+* Good feedback is an important part of the learning process. It is specific and has to be given as fast as possible after some task.
+* Ask questions before, during and after learning
+* The PQ4R method - preview, question, read, reflect, recite and review. These steps allow you to engage with some material beyond the shallow levels. 
+
+## Chapter 6. Mistakes in Learning
+* Lazy reading i.e. reading where you don't engage with the material.
+* It can be a mistake to assume you have a learning style when little scientific work support this (we all have a preference). Instead you should use a little of all the different learning styles.
+* Better to adapt the learning process according to your learning style i.e. abstract vs. concrete, sequential vs. random.
+* Lazy note taking is passive and fails to produce lasting learning. The Cornell note taking strategy is better.
+* A good note taking strategy also includes note editing, note analysis and note reflection.
+* All learning is trial and error. Not everything works.
